@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@interfaces/*": [ "src/Server/Interfaces/*" ],
+            "@models/*": ["src/Server/Models/*"],
+            "@routes/*": ["src/Server/Routes/*"],
+            "@controllers/*": ["src/Server/Controllers/*"],
+            "@validators/*": ["src/Server/Validators/*"],
+            "*": [ "node_modules/*" ]
+        },
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        //"noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
